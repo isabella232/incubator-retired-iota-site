@@ -29,7 +29,7 @@
 
         <!--RD Navbar-->
         <div class="rd-navbar-wrap">
-          <nav class="rd-navbar top-panel-none-items" data-layout="rd-navbar-fixed" data-hover-on="false" data-stick-up="false" data-sm-laout="rd-navbar-fullwidth" data-md-layout="rd-navbar-static">
+          <nav class="rd-navbar bg-white minimal top-panel-none toggles-none" data-layout="rd-navbar-fixed" data-hover-on="false" data-stick-up="false" data-sm-layout="rd-navbar-fullwidth" data-md-layout="rd-navbar-static">
             <div class="rd-navbar-top-panel">
               <div class="rd-navbar-inner">
                 <button data-rd-navbar-toggle=".list-inline, .fa-envelope, .fa-phone, .fa-shopping-cart" class="rd-navbar-collapse-toggle"><span></span></button><a href="mailto:#" class="fa-envelope">email@.com</a><a href="callto:#" class="fa-phone">+1 (126) 598-89-75</a>
@@ -72,12 +72,14 @@
 
                 <!--RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="#">Features</a>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="#">Features</a>
+
                     <!--RD Navbar Dropdown-->
                     <ul class="rd-navbar-dropdown">
                       <li><a href="features.html">iota Features</a></li>
-                      <li><a href="features.html#integrations">Open source integrations</a></li>
+                      <li><a href="features.html/#party">3rd Party Packages</a></li>
+                      <li><a href="faq.html">FAQ's</a></li>
                     </ul>
                     <!--END RD Navbar Dropdown-->
                     
@@ -117,16 +119,7 @@
           </nav>
         </div>
         <!--END RD Navbar-->
-        <section>
-          <!--Swiper-->
-          <div class="rd-parallax">
-            <div data-speed="0.6" data-type="media" data-url="img/main_background.jpg" class="rd-parallax-layer"></div>
-            <div data-speed="0.78" data-type="html" data-fade="true" class="well-parallax jumbotron text-center rd-parallax-layer">
-              <h1><small></small>Apache iota</h1>
-              <p class="big">An open-source platform<br> for the Internet of Things.</p><div class='btn-group-variant'> <a class='btn btn-default round-xl btn-sm' href='https://github.com/apache/incubator-iota'>Download iota</a></div>
-            </div>
-          </div>
-        </section>
+        
       </header>
       <!--
       ========================================================
@@ -135,86 +128,44 @@
       -->
       <main class="page-content">
 
-        <!--Start section-->
-        <section class="text-center well well-sm">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
-                <h1 class="text-bold">Architecture of iota</h1>
-                <p class="lead big">The iota core provides highly distributed and fault tolerant IoT point aggregation, security, managed data pipeline and orchestration capabilities:</p>
-                <img src="img/iota_architecture.png" alt="" width=90% class="offset-2">
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--End section-->
 
-        <!--Start section-->
-        <section class="well well-sm bg-lighter relative text-center">
+<section class="well well-sm section-border">
           <div class="container">
+            <h1 class="text-bold text-center">Frequently Asked Questions</h1>
             <div class="row">
-              <div class="col-lg-6 col-lg-offset-3">
-                <h1 class="text-bold">Architecture Components</h1>
-              </div>
-            </div>
-            <div class="row offset-1 text-md-center flow-offset-1">
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-heart"></span>
-                <h5>Core</h5>
-                <p>iota is built to ingest, analyze and orchestrate IoT data points in a highly distrubuted and high performance fashion.</p>
-              </div>
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-plus-square"></span>
-                <h5>API's</h5>
-                <p>iota's API's include access to the event processing and actions engine, as well as point value queries and interactions. </p>
-              </div>
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-codepen"></span>
-                <h5>Microservices</h5>
-                <p>Developers can create their own microservices that run on iota. A selection are included for free: encrypt, translate modules and more.</p>
-              </div>
-            </div>
-             <div class="row offset-1 text-md-center flow-offset-1">
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-tachometer"></span>
-                <h5>Management</h5>
-                <p>iota laptop and server editions (both standalone and cluster) include a web management front end that utilizes Django.</p>
-              </div>
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-connectdevelop"></span>
-                <h5>3rd Party Integrations</h5>
-                <p>iota utilizes some of the world's finest open-source components, including: Spark, Redis, CockroachDB, Kafka and more.</p>
-              </div>
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-server"></span>
-                <h5>Deploy</h5>
-                <p>Deploy iota directly in your device (ARM,) on your laptop (Mac or PC,) or via server(s) (Intel; standalone and cluster editions.) </p>
+              <div class="col-xs-12">
+                <div data-type="accordion" class="responsive-tabs">
+                  <ul class="resp-tabs-list">
+                    <li>How can I become a contributor?</li>
+                    <li>What color shoes am I wearing?</li>
+                    <li>What's better: San Francisco or NYC?</li>
+                    <li>Can can I build a timemachine?</li>
+                    <li>What's the name of your best friend?</li>
+                    <li>How much wood could a wood chuck chuck?</li>
+                    <li>What is your favorite musical instrument?</li>
+                    <li>Can I use my Commodore 64 to program iota?</li>
+                    <li>What's the longest you can hold your breath?</li>
+                    <li>How can I get support for an item which isn't working correctly?</li>
+                  </ul>
+                  <div class="resp-tabs-container">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-        <!--End section-->
+        </section>        
 
         
-
-        <!--Start section-->
-        <section class="bg-dark-var1 text-center">
-          <div class="container counter-panel">
-            <div class="row">
-              <div class="col-xs-6 col-sm-6 col-md-3">
-                <div data-from="0" data-to="197" class="counter"></div>
-                <p class="text-opacity font-secondary text-uppercase">Cups of Coffee</p>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-3">
-                <div data-from="0" data-to="7" class="counter"></div>
-                <p class="text-opacity font-secondary text-uppercase">Contributors</p>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-3">
-                <div data-from="0" data-to="9" class="counter"></div>
-                <p class="text-opacity font-secondary text-uppercase">Microservices</p>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-3">
-                <div data-from="0" data-to="3218" class="counter"></div>
-                <p class="text-opacity font-secondary text-uppercase">Lines of Code</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--End section-->
 
       </main>
       <!--

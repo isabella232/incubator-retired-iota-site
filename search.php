@@ -2,7 +2,7 @@
 <html lang="en" class="wide wow-animation">
   <head>
     <!--Site Title-->
-    <title>Welcome to Apache iota</title>
+    <title>Search Results</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -25,11 +25,11 @@
                               HEADER
       ========================================================
       -->
-      <header class="page-header">
+      <<header class="page-header subpage_header">
 
         <!--RD Navbar-->
         <div class="rd-navbar-wrap">
-          <nav class="rd-navbar top-panel-none-items" data-layout="rd-navbar-fixed" data-hover-on="false" data-stick-up="false" data-sm-laout="rd-navbar-fullwidth" data-md-layout="rd-navbar-static">
+          <nav class="rd-navbar bg-white minimal top-panel-none toggles-none" data-layout="rd-navbar-fixed" data-hover-on="false" data-stick-up="false" data-sm-layout="rd-navbar-fullwidth" data-md-layout="rd-navbar-static">
             <div class="rd-navbar-top-panel">
               <div class="rd-navbar-inner">
                 <button data-rd-navbar-toggle=".list-inline, .fa-envelope, .fa-phone, .fa-shopping-cart" class="rd-navbar-collapse-toggle"><span></span></button><a href="mailto:#" class="fa-envelope">email@.com</a><a href="callto:#" class="fa-phone">+1 (126) 598-89-75</a>
@@ -72,17 +72,9 @@
 
                 <!--RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="#">Features</a>
-                    <!--RD Navbar Dropdown-->
-                    <ul class="rd-navbar-dropdown">
-                      <li><a href="features.html">iota Features</a></li>
-                      <li><a href="features.html#integrations">Open source integrations</a></li>
-                    </ul>
-                    <!--END RD Navbar Dropdown-->
-                    
-                  </li>
-                  <li><a href="#">Community</a>
+                  <li><a href="index.html">Home</a></li>
+ 
+                  <li class="active"><a href="#">Community</a>
                     <ul class="rd-navbar-dropdown">
                       <li><a href="contribute.html">How to Contribute</a></li>
                       <li><a href="https://issues.apache.org/jira/browse/iota/">Issue Tracker</a></li>
@@ -117,16 +109,7 @@
           </nav>
         </div>
         <!--END RD Navbar-->
-        <section>
-          <!--Swiper-->
-          <div class="rd-parallax">
-            <div data-speed="0.6" data-type="media" data-url="img/main_background.jpg" class="rd-parallax-layer"></div>
-            <div data-speed="0.78" data-type="html" data-fade="true" class="well-parallax jumbotron text-center rd-parallax-layer">
-              <h1><small></small>Apache iota</h1>
-              <p class="big">An open-source platform<br> for the Internet of Things.</p><div class='btn-group-variant'> <a class='btn btn-default round-xl btn-sm' href='https://github.com/apache/incubator-iota'>Download iota</a></div>
-            </div>
-          </div>
-        </section>
+        
       </header>
       <!--
       ========================================================
@@ -134,88 +117,19 @@
       ========================================================
       -->
       <main class="page-content">
-
-        <!--Start section-->
-        <section class="text-center well well-sm">
+        <!--Search Results-->
+        <section class="well well-sm">
           <div class="container">
+            <h2 class="text-center">Search Results</h2>
             <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
-                <h1 class="text-bold">Architecture of iota</h1>
-                <p class="lead big">The iota core provides highly distributed and fault tolerant IoT point aggregation, security, managed data pipeline and orchestration capabilities:</p>
-                <img src="img/iota_architecture.png" alt="" width=90% class="offset-2">
+              <div class="col-xs-12">
+                <div class="rd-navbar-search-results"></div>
               </div>
             </div>
           </div>
         </section>
-        <!--End section-->
-
-        <!--Start section-->
-        <section class="well well-sm bg-lighter relative text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-lg-offset-3">
-                <h1 class="text-bold">Architecture Components</h1>
-              </div>
-            </div>
-            <div class="row offset-1 text-md-center flow-offset-1">
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-heart"></span>
-                <h5>Core</h5>
-                <p>iota is built to ingest, analyze and orchestrate IoT data points in a highly distrubuted and high performance fashion.</p>
-              </div>
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-plus-square"></span>
-                <h5>API's</h5>
-                <p>iota's API's include access to the event processing and actions engine, as well as point value queries and interactions. </p>
-              </div>
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-codepen"></span>
-                <h5>Microservices</h5>
-                <p>Developers can create their own microservices that run on iota. A selection are included for free: encrypt, translate modules and more.</p>
-              </div>
-            </div>
-             <div class="row offset-1 text-md-center flow-offset-1">
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-tachometer"></span>
-                <h5>Management</h5>
-                <p>iota laptop and server editions (both standalone and cluster) include a web management front end that utilizes Django.</p>
-              </div>
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-connectdevelop"></span>
-                <h5>3rd Party Integrations</h5>
-                <p>iota utilizes some of the world's finest open-source components, including: Spark, Redis, CockroachDB, Kafka and more.</p>
-              </div>
-              <div class="col-sm-6 col-md-3 col-md-offset-1"><span class="icon icon-lg icon-primary fa-server"></span>
-                <h5>Deploy</h5>
-                <p>Deploy iota directly in your device (ARM,) on your laptop (Mac or PC,) or via server(s) (Intel; standalone and cluster editions.) </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--End section-->
-
+        <!--END Search Results-->
         
-
-        <!--Start section-->
-        <section class="bg-dark-var1 text-center">
-          <div class="container counter-panel">
-            <div class="row">
-              <div class="col-xs-6 col-sm-6 col-md-3">
-                <div data-from="0" data-to="197" class="counter"></div>
-                <p class="text-opacity font-secondary text-uppercase">Cups of Coffee</p>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-3">
-                <div data-from="0" data-to="7" class="counter"></div>
-                <p class="text-opacity font-secondary text-uppercase">Contributors</p>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-3">
-                <div data-from="0" data-to="9" class="counter"></div>
-                <p class="text-opacity font-secondary text-uppercase">Microservices</p>
-              </div>
-              <div class="col-xs-6 col-sm-6 col-md-3">
-                <div data-from="0" data-to="3218" class="counter"></div>
-                <p class="text-opacity font-secondary text-uppercase">Lines of Code</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--End section-->
-
       </main>
       <!--
       ========================================================
